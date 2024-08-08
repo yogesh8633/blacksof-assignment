@@ -35,7 +35,7 @@ const SliderComponent: React.FC = () => {
     infinite: false,
     autoplay: true,
     autoplaySpeed: 3000,
-    beforeChange: (oldIndex, newIndex) => setCurrentIndex(newIndex),
+    beforeChange: (_oldIndex: number, newIndex: number) => setCurrentIndex(newIndex),
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
     responsive: [
