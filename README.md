@@ -12,7 +12,6 @@ Check out the live demo: [blacksof-assignment-five.vercel.app](https://blacksof-
 - **TailwindCSS**: Utilized for styling and ensuring responsiveness across different screen sizes.
 - **React Hook Form**: Implemented for managing form state and validation.
 - **Custom Animations**: Integrated scroll-triggered animations for dynamic content updates.
-- **Accessibility**: Followed ARIA standards to ensure accessibility.
 
 
 ## Instructions to Run
