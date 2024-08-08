@@ -1,0 +1,116 @@
+.slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide.inactive img {
+  filter: grayscale(100%) blur(2px);
+  transform: scale(0.9);
+}
+
+.slide.active img {
+  filter: none;
+  transform: scale(1.1);
+}
+
+.text-below-slider {
+  margin-top: 16px;
+}
+
+.slide-text {
+  opacity: 1;
+  transition: opacity 500ms, transform 500ms;
+}
+
+.slide-text-exit {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+/* Custom arrow styles */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-arrow:hover {
+  background-color: white;
+  color: #000;
+}
+
+.custom-next {
+  right: 70px; /* Adjust as needed */
+}
+
+.custom-prev {
+  left: 70px; /* Adjust as needed */
+}
+
+/* Hide default slick arrows */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .custom-arrow {
+    width: 50px;
+    height: 50px;
+  }
+  .custom-next {
+    right: 40px;
+  }
+  .custom-prev {
+    left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-arrow {
+    width: 50px;
+    height: 50px;
+  }
+  .custom-next {
+    right: 5px;
+  }
+  .custom-prev {
+    left: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: small;
+  }
+  .custom-next {
+    right: 0;
+  }
+  .custom-prev {
+    left: 0;
+  }
+}

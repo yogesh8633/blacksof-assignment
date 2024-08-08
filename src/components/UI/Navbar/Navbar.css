@@ -1,0 +1,31 @@
+/* navbar.css */
+@media (min-width: 768px) {
+    .mobile-menu-button {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-menu {
+      display: none;
+    }
+  
+    .mobile-menu-button {
+      display: block;
+    }
+  }
+  
+  .mobile-menu-button svg {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .mobile-menu ul {
+    background-color: white;
+    border-top: 1px solid #eaeaea;
+  }  
+  .mobile-menu ul li a {
+    display: block;
+    padding: 10px 20px;
+  }
+  
